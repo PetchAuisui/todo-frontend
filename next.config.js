@@ -2,8 +2,8 @@
 const repoName = 'todo-frontend';
 const nextConfig = {
   output: 'export',
-// basePath: `/${repoName}`,
-// assetPrefix: `/${repoName}/`,
+  basePath: `/${repoName}`,
+  assetPrefix: `/${repoName}/`,
   images: {
     unoptimized: true,
   },
