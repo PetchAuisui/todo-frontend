@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom Scrollbar */
+/* Custom Scrollbar - Blue-Green Theme */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -13,12 +13,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #a855f7, #ec4899);
+  background: linear-gradient(to bottom, #0ea5e9, #10b981);
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, #9333ea, #db2777);
+  background: linear-gradient(to bottom, #0284c7, #059669);
 }
 
 /* Smooth Transitions */
@@ -49,3 +49,39 @@ textarea:focus {
     transform: translateY(-10px);
   }
 }
+
+/* Theme Color Override - Blue-Green Gradient */
+@layer utilities {
+  .bg-gradient-purple-pink {
+    background: linear-gradient(to right, #0ea5e9, #10b981);
+  }
+  
+  .bg-gradient-purple-pink:hover {
+    background: linear-gradient(to right, #0284c7, #059669);
+  }
+  
+  .text-purple-600 {
+    color: #0ea5e9;
+  }
+  
+  .text-pink-600 {
+    color: #10b981;
+  }
+  
+  .from-purple-600 {
+    --tw-gradient-from: #0ea5e9;
+  }
+  
+  .to-pink-600 {
+    --tw-gradient-to: #10b981;
+  }
+  
+  .border-purple-600 {
+    border-color: #0ea5e9;
+  }
+  
+  .border-pink-600 {
+    border-color: #10b981;
+  }
+}
+
