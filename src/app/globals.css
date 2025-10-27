@@ -83,5 +83,22 @@ textarea:focus {
   .border-pink-600 {
     border-color: #10b981;
   }
+  
+  /* Background Gradient Override */
+  .from-purple-100 {
+    --tw-gradient-from: #e0f2fe !important; /* sky-100 */
+  }
+  
+  .via-pink-50 {
+    --tw-gradient-via: #f0fdfa !important; /* teal-50 */
+  }
+  
+  .to-blue-100 {
+    --tw-gradient-to: #d1fae5 !important; /* emerald-100 */
+  }
+  
+  /* Alternative: Direct override for the main background */
+  .bg-gradient-to-br.from-purple-100.via-pink-50.to-blue-100 {
+    background: linear-gradient(to bottom right, #e0f2fe, #f0fdfa, #d1fae5) !important;
+  }
 }
-
